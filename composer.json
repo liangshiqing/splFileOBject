@@ -1,0 +1,20 @@
+{
+    "name": "forphp/csv",
+    "description": "Simple encapsulation of CSV operation",
+    "type": "project",
+    "authors": [
+        {
+            "name": "liangshiqing",
+            "email": "316703088@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "splFileOBject\\": "src/"
+        }
+    }
+}
