@@ -6,6 +6,11 @@ use splFileOBject\exception\ReaderException;
 use SplFileObject;
 use splFileOBject\interfaces\Reader;
 
+/**
+ * Class CsvReader
+ * @package splFileOBject\readers
+ * @author Liangshiqing
+ */
 class CsvReader implements Reader
 {
     /**
@@ -37,7 +42,7 @@ class CsvReader implements Reader
             if (!is_file($this->file) || !is_readable($this->file)) {
                 throw new ReaderException("No exists file or not readable {$this->file}");
             }
-            $this->file = new SplFileObject($this->file);
+            $this->file = new SplFileObject($this->file,'r');
         }
 
         if (!$this->file instanceof SplFileObject) {
